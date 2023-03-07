@@ -46,18 +46,26 @@ a:hover{
     color: blueviolet;
 }
 
+.card-group{
+    justify-content: center;
+    display: grid;
+}
+
 .card {
-    position: absolute;
-    margin: 10vh;
+    width: 25%;
+    margin: 5vh;
     color: white;
-    bottom: 30vh;
     border-radius: 5%;
-    background: linear-gradient(darkgray, black);
-    aspect-ratio: 5 / 7;
-    size: 10vh;
+    background: linear-gradient(to right, rgb(78, 78, 78), black);
     transition: 0.15s;
+    grid-area: center;
+    aspect-ratio: 5 / 7;
 }
 
 .card:hover {
     rotate: 12deg;
+}
+
+.card:nth-child(1){
+    transform: translateX(-2vh);
 }
