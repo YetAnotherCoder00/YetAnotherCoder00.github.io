@@ -1,0 +1,63 @@
+html {
+    height: auto;
+    min-height: 100%;
+}
+
+body {
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    background: linear-gradient(#e66465, #9198e5);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 10vh;
+    /*
+    background-image: linear-gradient(to bottom, white, black);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    */
+    color: black;
+}
+
+h2 {
+    font-size: 7vh
+}
+
+p {
+    font-size: 3vh;
+}
+
+a {
+    font-size: 3vh;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: blueviolet;
+}
+
+.card {
+    position: absolute;
+    margin: 10vh;
+    color: white;
+    bottom: 30vh;
+    border-radius: 5%;
+    background: linear-gradient(darkgray, black);
+    aspect-ratio: 5 / 7;
+    size: 10vh;
+    transition: 0.15s;
+}
+
+.card:hover {
+    rotate: 12deg;
+}
