@@ -9,21 +9,26 @@ body {
     align-content: center;
     background: linear-gradient(#e66465, #9198e5);
     background-repeat: no-repeat;
+    user-select: none;
 }
 
 h1 {
     font-size: 8vh;
-    /*
-    background-image: linear-gradient(to bottom, white, black);
+    background-image: linear-gradient(to bottom, pink, lightblue);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    */
+    /*
     color: black;
+    */
 }
 
 h2 {
-    font-size: 5vh
+    font-size: 5vh;
+    background-image: linear-gradient(to bottom, pink, lightblue);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 p {
