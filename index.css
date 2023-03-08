@@ -1,5 +1,6 @@
 html {
     height: auto;
+    font-family: "Golos Text";
     min-height: 100%;
 }
 
@@ -22,6 +23,17 @@ h1 {
     color: black;
     */
 }
+
+footer {
+    font-size: 2vh;
+     background-image: linear-gradient(to bottom, white, pink);
+     color: transparent;
+     -webkit-background-clip: text;
+     background-clip: text;
+     /*
+     color: black;
+     */
+ }
 
 h2 {
     font-size: 5vh;
@@ -58,6 +70,7 @@ a:hover{
 }
 
 .card {
+    padding: 2vh;
     width: 24vh;
     margin: 5vh 5vh 5vh 0vh;
     color: white;

@@ -5,24 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <h1>Welcome to my<br>portfolio!</h1>
     <h2>Projects:</h2>
     <div class="card-group">
-        <div class="card" id="card1" onmouseover="movecard1()" onmouseout="backcard1()">
+        <div class="card" id="card1" onmouseover="movecard1()" onmouseout="backcard1()" onclick="enlarge1()">
           <p id="title1">
             Modul 1
           </p>
-          <p id="text1" style="font-size: 2vh; visibility: hidden;" onclick="enlarge(document.getElementById('card1'))">Right now, I just have my CRUD application aka my
+          <p id="text1" style="font-size: 2vh; visibility: hidden;"onclick="enlarge1()">Right now, I just have my CRUD application aka my
             BugTracker, which is my most sophisticated
             project yet. You can find it
             <a href="https://github.com/YetAnotherCoder00/BugTracker">here</a>
-            on GitHub.</p>
+            on GitHub.
+          </p>
             
         </div>
-        <div class="card" id="card2" onmouseover="movecard2()" onmouseout="backcard2()">
+        <div class="card" id="card2" onmouseover="movecard2()" onmouseout="backcard2()" onclick="enlarge2()">
             <p id="title2">
                 Projekt 2
             </p>
@@ -31,19 +35,71 @@
                 with SendGrid, although I will add it one day.
             </p>
         </div>
-        <div class="card" id="card3" onmouseover="movecard3()" onmouseout="backcard3()">
+        <div class="card" id="card3" onmouseover="movecard3()" onmouseout="backcard3()" onclick="enlarge3()">
             <p id="title3">
                 Projekt 3
             </p>
             <p id="text3" style="font-size: 2vh; visibility: hidden;">
-                text about project 3
+                text about project 3 and some more info
             </p>
         </div>
     </div>
+    <footer>
+        Click on any card to enlarge and again to shrink it.
+    </footer>
 </body>
 </html>
 
 <script>
+
+    var enlarged1 = false;
+    var enlarged2 = false;
+    var enlarged3 = false;
+    function enlarge1(){
+        if (enlarged1 === false){
+            document.getElementById("card1").style.marginLeft = "-12vh";
+            document.getElementById("card1").style.scale = "1.8";
+            document.getElementById("card1").style.zIndex = "10";
+            enlarged1 = true;
+        }
+        else {
+            document.getElementById("card1").style.marginLeft = "0vh";
+            document.getElementById("card1").style.scale = "1";
+            document.getElementById("card1").style.position = "static";
+            document.getElementById("card1").style.zIndex = "1";
+            enlarged1 = false;
+        }
+    }
+    function enlarge2(){
+        if (enlarged2 === false){
+            document.getElementById("card2").style.marginLeft = "10vh";
+            document.getElementById("card2").style.scale = "1.8";
+            document.getElementById("card2").style.zIndex = "10";
+            enlarged2 = true;
+        }
+        else {
+            document.getElementById("card2").style.marginLeft = "20vh";
+            document.getElementById("card2").style.scale = "1";
+            document.getElementById("card2").style.position = "static";
+            document.getElementById("card2").style.zIndex = "2";
+            enlarged2 = false;
+        }
+    }
+    function enlarge3(){
+        if (enlarged3 === false){
+            document.getElementById("card3").style.marginLeft = "20vh";
+            document.getElementById("card3").style.scale = "1.8";
+            document.getElementById("card3").style.zIndex = "10";
+            enlarged3 = true;
+        }
+        else {
+            document.getElementById("card3").style.marginLeft = "42vh";
+            document.getElementById("card3").style.scale = "1";
+            document.getElementById("card3").style.position = "static";
+            document.getElementById("card3").style.zIndex = "3";
+            enlarged3 = false;
+        }
+    }
     function movecard1(){
         document.getElementById("card2").style.marginLeft = "30vh";
         document.getElementById("card3").style.marginLeft = "50vh";
@@ -62,14 +118,17 @@
     }
 
     function movecard2(){
-        document.getElementById("card3").style.marginLeft = "50vh";
-        document.getElementById("title2").style.opacity = "0";
-        document.getElementById("text2").style.opacity = "1";
-        document.getElementById("title2").style.visibility = "hidden";
-        document.getElementById("text2").style.visibility = "visible";
+
+        if (!enlarged2) {
+            document.getElementById("card3").style.marginLeft = "50vh";
+            document.getElementById("title2").style.opacity = "0";
+            document.getElementById("text2").style.opacity = "1";
+            document.getElementById("title2").style.visibility = "hidden";
+            document.getElementById("text2").style.visibility = "visible";
+        }
     }
     function backcard2(){
-        document.getElementById("card2").style.marginLeft = "22vh";
+        //document.getElementById("card2").style.marginLeft = "22vh";
         document.getElementById("card3").style.marginLeft = "42vh";
         document.getElementById("title2").style.opacity = "1";
         document.getElementById("text2").style.opacity = "0";
