@@ -11,12 +11,69 @@
     <h1>Welcome to my<br>portfolio!</h1>
     <h2>Projects:</h2>
     <div class="card-group">
-        <div class="card">Right now, I just have my CRUD application aka my BugTracker, which is my most sophisticated
-            project yet. You can find it <a href="https://github.com/YetAnotherCoder00/BugTracker">here</a> on GitHub.
+        <div class="card" id="card1" onmouseover="movecard1()" onmouseout="backcard1()">
+          <p id="title1">
+            Modul 1
+          </p>
+          <p id="text1" style="font-size: 2vh; visibility: hidden;">Right now, I just have my CRUD application aka my 
+            BugTracker, which is my most sophisticated
+            project yet. You can find it
+            <a href="https://github.com/YetAnotherCoder00/BugTracker">here</a>
+            on GitHub.</p>
+            
         </div>
-        <div class="card">
-            It is pretty much complete, except for an automatic authentication with SendGrid, although I will add it one day
+        <div class="card" id="card2" onmouseover="movecard2()" onmouseout="backcard2()">
+            <p id="title2">
+                Projekt 2
+            </p>
+            <p id="text2" style="font-size: 2vh; visibility: hidden;">
+                It is pretty much complete, except for an automatic authentication
+                with SendGrid, although I will add it one day.
+            </p>
+        </div>
+        <div class="card" id="card3" onmouseover="movecard3()" onmouseout="backcard3()">
+            <p id="title3">
+                Projekt 3
+            </p>
+            <p id="text3" style="font-size: 2vh; visibility: hidden;">
+                text about project 3
+            </p>
         </div>
     </div>
 </body>
 </html>
+
+<script>
+    function movecard1(){
+        document.getElementById("card2").style.marginLeft = "30vh";
+        document.getElementById("card3").style.marginLeft = "50vh";
+        document.getElementById("title1").style.opacity = 0;
+        document.getElementById("text1").style.opacity = 1;
+        document.getElementById("title1").style.visibility = "hidden";
+        document.getElementById("text1").style.visibility = "visible";
+    }
+    function backcard1(){
+        document.getElementById("card2").style.marginLeft = "22vh";
+        document.getElementById("card3").style.marginLeft = "42vh";
+        document.getElementById("title1").style.opacity = 1;
+        document.getElementById("text1").style.opacity = 0;
+        document.getElementById("title1").style.visibility = "visible";
+        document.getElementById("text1").style.visibility = "hidden";
+    }
+
+    function movecard2(){
+        document.getElementById("card3").style.marginLeft = "50vh";
+        document.getElementById("title2").style.opacity = 0;
+        document.getElementById("text2").style.opacity = 1;
+        document.getElementById("title2").style.visibility = "hidden";
+        document.getElementById("text2").style.visibility = "visible";
+    }
+    function backcard2(){
+        document.getElementById("card2").style.marginLeft = "22vh";
+        document.getElementById("card3").style.marginLeft = "42vh";
+        document.getElementById("title2").style.opacity = 1;
+        document.getElementById("text2").style.opacity = 0;
+        document.getElementById("title2").style.visibility = "visible";
+        document.getElementById("text2").style.visibility = "hidden";
+    }
+</script>
