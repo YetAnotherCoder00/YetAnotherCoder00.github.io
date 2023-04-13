@@ -1,5 +1,11 @@
+@font-face {
+    font-family: "Golos Text";
+    src: url("./ressources/GolosText-Regular.ttf")
+}
+
+
 html {
-    height: auto;
+    height: 100%;
     font-family: "Golos Text";
     min-height: 100%;
 }
@@ -11,6 +17,15 @@ body {
     background: linear-gradient(#e66465, #9198e5) no-repeat;
     user-select: none;
 }
+
+.body2 {
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    background: linear-gradient(#e66465, #9198e5) no-repeat;
+    user-select: none;
+}
+
 
 h1 {
     font-size: 8vh;

@@ -5,59 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    <h1>Welcome to my<br>e-portfolio!</h1>
-    <h2>Kreativitätsmethoden:</h2>
-    <div class="card-group">
-        <div class="card" id="card1" onmouseover="movecard1()" onmouseout="backcard1()" onclick="enlarge1()">
-          <p id="title1">
-            Lernjournal
-          </p>
-          <p id="text1" style="font-size: 2vh; visibility: hidden; user-select: none;">Right now, I just have my CRUD application aka my
-            BugTracker, which is my most sophisticated
-            project yet. You can find it
-            <a href="https://github.com/YetAnotherCoder00/BugTracker">here</a>
-            on GitHub.
-          </p>
-            
+<body >
+    <div class="body1" style="height: 100%; margin: 0; padding: 0">
+        <h1>Welcome to my<br>e-portfolio!</h1>
+        <h2>Kreativitätsmethoden:</h2>
+        <div class="card-group">
+            <div class="card" id="card1" onmouseover="movecard1()" onmouseout="backcard1()" onclick="enlarge1()">
+            <p id="title1">
+                1. Kreativitätsmethode
+            </p>
+            <p id="text1" style="font-size: 2vh; visibility: hidden; user-select: none;">Right now, I just have my CRUD application aka my
+                BugTracker, which is my most sophisticated
+                project yet. You can find it
+                <a href="https://github.com/YetAnotherCoder00/BugTracker">here</a>
+                on GitHub.
+            </p>
+                
+            </div>
+            <div class="card" id="card2" onmouseover="movecard2()" onmouseout="backcard2()" onclick="enlarge2()">
+                <p id="title2">
+                    2. Kreativitätsmethode
+                </p>
+                <p id="text2" style="font-size: 2vh; visibility: hidden;">
+                    It is pretty much complete, except for an automatic authentication
+                    with SendGrid, although I will add it one day.
+                </p>
+            </div>
+            <div class="card" id="card3" onmouseover="movecard3()" onmouseout="backcard3()" onclick="enlarge3()">
+                <p id="title3">
+                    Projekt 3
+                </p>
+                <p id="text3" style="font-size: 2vh; visibility: hidden;">
+                    text about project 3 and some more info
+                </p>
+            </div>
+            <div class="card" id="card4" onmouseover="movecard4()" onmouseout="backcard4()" onclick="enlarge4()">
+                <p id="title4">
+                    Projekt 4
+                </p>
+                <p id="text4" style="font-size: 2vh; visibility: hidden;">
+                    text about project 4 and some more info
+                </p>
+            </div>
         </div>
-        <div class="card" id="card2" onmouseover="movecard2()" onmouseout="backcard2()" onclick="enlarge2()">
-            <p id="title2">
-                Projekt 2
-            </p>
-            <p id="text2" style="font-size: 2vh; visibility: hidden;">
-                It is pretty much complete, except for an automatic authentication
-                with SendGrid, although I will add it one day.
-            </p>
-        </div>
-        <div class="card" id="card3" onmouseover="movecard3()" onmouseout="backcard3()" onclick="enlarge3()">
-            <p id="title3">
-                Projekt 3
-            </p>
-            <p id="text3" style="font-size: 2vh; visibility: hidden;">
-                text about project 3 and some more info
-            </p>
-        </div>
-        <div class="card" id="card4" onmouseover="movecard4()" onmouseout="backcard4()" onclick="enlarge4()">
-            <p id="title4">
-                Projekt 4
-            </p>
-            <p id="text4" style="font-size: 2vh; visibility: hidden;">
-                text about project 4 and some more info
-            </p>
-        </div>
+        <footer>
+            Click on any card to enlarge it and move your cursor out to shrink it.
+        </footer>
     </div>
-    <footer>
-        Click on any card to enlarge it and move your cursor out to shrink it.
-    </footer>
-
-
-    <div>Test</div>
+    <div class="body2">
+        test
+    </div>
 </body>
 </html>
 
