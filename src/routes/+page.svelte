@@ -1,2 +1,253 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+
+
+<script lang="ts">
+    import { browser } from '$app/environment';
+    import { scale } from 'svelte/transition';
+
+    let enlarged1: boolean = false;
+    let enlarged2: boolean = false;
+    let enlarged3: boolean = false;
+    let enlarged4: boolean = false;
+
+    function enlarged1toggle(){
+        if (enlarged1) enlarged1 = false;
+        else if (!enlarged1) enlarged1 = true;
+    }
+
+    function enlarged2toggle(){
+        if (enlarged2) enlarged2 = false;
+        else if (!enlarged2) enlarged2 = true;
+    }
+
+    function enlarged3toggle(){
+        if (enlarged3) enlarged3 = false;
+        else if (!enlarged3) enlarged3 = true;
+    }
+
+    function enlarged4toggle(){
+        if (enlarged4) enlarged4 = false;
+        else if (!enlarged4) enlarged4 = true;
+    }
+
+    function showmenu(){
+        console.log("test");
+    }
+
+</script>
+
+<div class="body">
+    <i class="fa-solid fa-bars fa-2xl" style="top: 20px; right: 10px; position: absolute" on:click={showmenu}></i>
+    <h1>
+        E-Portfolio
+    </h1>
+
+    <h2>Kreativitätsmethoden</h2>
+
+    <div class="card-group">
+
+        <div class="card" id="card1" class:bigCard1="{enlarged1 === true}" on:click={enlarged1toggle} on:mouseout={() => enlarged1 = false}>
+            {#if !enlarged1}
+            <p id="title1" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
+                Die Walt Disney Methode
+            </p>
+            {:else}
+            <p id="text1" style="font-size: 1.25vh; user-select: none;" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
+                Bei dieser methode hat man vier Stühle. Auf jedem Stuhl sitzt eine Person. Jede Person nimmt eine Rolle ein: Neutral, Kritisch, Realistisch und Träumerisch. <br><br>
+                Aus der Perspektive der person, auf deren Stuhl man sitzt bringt man dann Ideen und wertet man die Ideen der anderen. Danach wechselt man den stul. <br><br>
+                Bei der neutralen Person wird dann zusammengefasst. Dann geht es so lange im kreis, bis alle Personen damit einverstanden sind und man ist fertig.
+            </p>
+            {/if}
+        </div>
+        <div class="card" id="card2" class:bigCard2="{enlarged2 === true}" on:click={enlarged2toggle} on:mouseout={() => enlarged2 = false}>
+            {#if !enlarged2}
+                <p id="title2" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
+                    Brainstorming
+                </p>
+            {:else}
+                <p id="text2" style="font-size: 1.25vh; user-select: none;" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
+                    Beim Brainstorming schreiben alle Teilnehmer Alle ihre Gedanken, die sie zu einem Thema haben auf ein Blatt, Whiteboard, oder ein anderes geeignetes medium. <br> <br>
+                    Das Ziel dabei ist es, schlussendlich so viele Ideen zu einem Thema zu generieren, wie möglich. Mit Braianstorming meint man also das schnelle und ungefilterte Sammeln von Ideen.
+                </p>
+            {/if}
+        </div>
+        <div class="card" id="card3" class:bigCard3="{enlarged3 === true}" on:click={enlarged3toggle} on:mouseout={() => enlarged3 = false}>
+            {#if !enlarged3}
+                <p id="title3" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
+                    Mind-Maps
+                </p>
+            {:else}
+                <p id="text3" style="font-size: 1.25vh; user-select: none;" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
+                    Bei Mind-Maps will man wie beim Brainstorming so viele verschiedene Ideen sammeln, wie möglich. Diese werden jedoch bei Mind-Maps in strukturierter Form dargestellt. <br><br>
+                    Die Begriffe in einer Mind-Map werden gruppiert und durch Blasen getrennt, welche mit Strichen verbundeen sind, um die Assotiationen zwischen verschiedenen Idee-Gruppen festzuhalten. <br><br>
+                    Man kann bei Mind-Maps ablesen, wie bestimmte begriffe zusammenhängen. Das kann auch beim überlegen neuer Ideen helfen.
+                </p>
+            {/if}
+        </div>
+        <div class="card" id="card4" class:bigCard4="{enlarged4 === true}" on:click={enlarged4toggle} on:mouseout={() => enlarged4 = false}>
+            {#if !enlarged4}
+                <p id="title4" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
+                    Die Kuchen Methode
+                </p>
+            {:else}
+                <p id="text4" style="font-size: 1.25vh; user-select: none; line-height: 1.25vh;" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
+                    Wenn man die Kuchen Methode anwendet, geht man beim Überlegen so vor, wie beim Kuchen-Backen:
+                    <br><br>
+                    Die Zutaten sammeln:
+                    Bei diesem schritt macht man ein Brainstorming und schreibt alle Ideen (Zutaten) auf.
+                    <br><br>
+                    Ein Teig daraus machen:
+                    Hier macht man Gruppen aus den gesammelten ideen. Das kann man zum beispiel mit verschiedenen Farben machen.
+                    <br><br>
+                    Den Teig ruhen lassen:
+                    In dieser Phase macht man etwas komplett anderes wie zum beispiel Sport und lässt dabei das Unterbewusstsein an den Ideen arbeiten.
+                    <br><br>
+                    Den Teig backen:
+                    Zu letzt setzt man sich noch mal an die grupierten Ideen, sortiert die nicht so guten aus und fasst die guten zusammen, bis man mit dem Ergebnis zufrieden ist.
+                </p>
+            {/if}
+        </div>
+
+    </div>
+</div>
+
+<style>
+    :root {
+        --index1: 1;
+        --index2: 2;
+        --index3: 3;
+        --index4: 4;
+    }
+
+    h1 {
+        font-size: 8vh;
+        margin: 0;
+        padding: 10vh 0 0 0;
+    }
+
+    h2 {
+        font-size: 4vh;
+    }
+
+    p {
+        font-size: 2vh;
+        transition: cubic-bezier(.17, .67, .66, .91) 0.15s;
+        pointer-events: none;
+    }
+
+
+    .body {
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        background: linear-gradient(#e66465, #9198e5) no-repeat;
+        user-select: none;
+        min-height: 100%;
+        height: auto;
+        margin: 0;
+        top: 0;
+    }
+
+
+    .card {
+        padding: 2vh;
+        width: 24vh;
+        margin: 5vh 5vh 5vh 0;
+        color: white;
+        border-radius: 5%;
+        background: linear-gradient(to right, rgb(78, 78, 78), black);
+        transition: cubic-bezier(.17,.67,.66,.91) 0.15s;
+        grid-area: center;
+        aspect-ratio: 5 / 7;
+    }
+
+    .card:hover {
+        width: 24vh;
+        rotate: 5deg;
+
+    }
+    @media (min-width: 680px){
+
+        .card-group{
+            justify-content: center;
+            flex-direction: row;
+            display: flex;
+        }
+        .card:nth-child(1) {
+            z-index: var(--index1);
+            margin-left: 0;
+            margin-right: 0;
+
+        }
+
+        .card:nth-child(2) {
+            z-index: var(--index2);
+            margin-left: -2vh;
+            margin-right: 0;
+        }
+
+        .card:nth-child(3) {
+            z-index: var(--index3);
+            margin-left: -2vh;
+            margin-right: 0;
+        }
+
+        .card:nth-child(4) {
+            z-index: var(--index4);
+            margin-left: -2vh;
+            margin-right: 0;
+        }
+    }
+    @media (max-width: 679px){
+
+        .card-group{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:nth-child(1) {
+            z-index: var(--index1);
+            margin: 2vh auto 2vh auto;
+
+        }
+
+        .card:nth-child(2) {
+            z-index: var(--index2);
+            margin: 2vh auto 2vh auto;
+        }
+
+        .card:nth-child(3) {
+            z-index: var(--index3);
+            margin: 2vh auto 2vh auto;
+
+        }
+
+        .card:nth-child(4) {
+            z-index: var(--index4);
+            margin: 2vh auto 2vh auto;
+        }
+    }
+
+
+
+    .bigCard1 {
+        --index1: 10;
+        scale: 1.8;
+    }
+
+    .bigCard2 {
+        --index2: 10;
+        scale: 1.8;
+    }
+
+    .bigCard3 {
+        --index3: 10;
+        scale: 1.8;
+    }
+
+    .bigCard4 {
+        --index4: 10;
+        scale: 1.8;
+    }
+
+
+</style>
