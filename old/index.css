@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Golos Text";
+    src: url("./ressources/GolosText-Regular.ttf")
+}
+
+
+html {
+    height: 100%;
+    font-family: "Golos Text";
+    min-height: 100%;
+}
+
+body {
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    background: linear-gradient(#e66465, #9198e5) no-repeat;
+    user-select: none;
+}
+
+.body2 {
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    background: linear-gradient(#e66465, #9198e5) no-repeat;
+    user-select: none;
+}
+
+
+h1 {
+    font-size: 8vh;
+    background-image: linear-gradient(to bottom, pink, lightblue);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /*
+    color: black;
+    */
+}
+
+footer {
+    font-size: 2vh;
+     background-image: linear-gradient(to bottom, white, pink);
+     color: transparent;
+     -webkit-background-clip: text;
+     background-clip: text;
+     /*
+     color: black;
+     */
+ }
+
+h2 {
+    font-size: 5vh;
+    background-image: linear-gradient(to bottom, pink, lightblue);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+p {
+    font-size: 3vh;
+    transition: cubic-bezier(.17, .67, .66, .91) 0.15s;
+    pointer-events: none;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+    transition: 0.3s;
+}
+
+a:visited {
+    align-self: start;
+    text-decoration: underline;
+    color: white;
+}
+
+a:hover{
+    color: blueviolet;
+}
+
+.card-group{
+    justify-content: center;
+    display: grid;
+}
+
+.card {
+    padding: 2vh;
+    width: 24vh;
+    margin: 5vh 5vh 5vh 0vh;
+    color: white;
+    border-radius: 5%;
+    background: linear-gradient(to right, rgb(78, 78, 78), black);
+    transition: cubic-bezier(.17,.67,.66,.91) 0.15s;
+    grid-area: center;
+    aspect-ratio: 5 / 7;
+}
+
+.card:hover {
+    width: 24vh;
+    rotate: 5deg;
+}
+
+.card:nth-child(1) {
+    z-index: 1;
+    margin-left: 2vh;
+}
+
+.card:nth-child(2) {
+    z-index: 2;
+    margin-left: 22vh;
+}
+
+.card:nth-child(3) {
+    z-index: 3;
+    margin-left: 42vh;
+}
+
+.card:nth-child(4) {
+    z-index: 4;
+    margin-left: 62vh;
+}
