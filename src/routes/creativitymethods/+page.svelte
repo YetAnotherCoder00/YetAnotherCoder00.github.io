@@ -179,6 +179,26 @@
             rotate: 5deg;
 
         }
+
+        .bigCard1 {
+            --index1: 10;
+            scale: 1.8;
+        }
+
+        .bigCard2 {
+            --index2: 10;
+            scale: 1.8;
+        }
+
+        .bigCard3 {
+            --index3: 10;
+            scale: 1.8;
+        }
+
+        .bigCard4 {
+            --index4: 10;
+            scale: 1.8;
+        }
     }
     @media (max-width: 679px){
 
@@ -208,29 +228,31 @@
             z-index: var(--index4);
             margin: 2vh auto 2vh auto;
         }
+
+        .bigCard1 {
+            --index1: 10;
+            scale: 1.6;
+        }
+
+        .bigCard2 {
+            --index2: 10;
+            scale: 1.6;
+        }
+
+        .bigCard3 {
+            --index3: 10;
+            scale: 1.6;
+        }
+
+        .bigCard4 {
+            --index4: 10;
+            scale: 1.6;
+        }
     }
 
 
 
-    .bigCard1 {
-        --index1: 10;
-        scale: 1.8;
-    }
-
-    .bigCard2 {
-        --index2: 10;
-        scale: 1.8;
-    }
-
-    .bigCard3 {
-        --index3: 10;
-        scale: 1.8;
-    }
-
-    .bigCard4 {
-        --index4: 10;
-        scale: 1.8;
-    }
+    
 
 
 </style>
