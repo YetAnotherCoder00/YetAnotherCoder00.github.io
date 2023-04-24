@@ -10,7 +10,13 @@
         <div class="card" class:transformedcard={transformedcardbool}>
 
         </div>
-        <div class="card" class:transformedcard={transformedcardbool}></div>
+        <div class="blurred" class:transformedcard={transformedcardbool} on:mouseenter={() => transformedcardbool = true} on:mouseout={() => {transformedcardbool = false}}>
+            Content
+        </div>
+
+        <div class="card" class:transformedcard={transformedcardbool}>
+
+        </div>
         <div class="blurred" class:transformedcard={transformedcardbool} on:mouseenter={() => transformedcardbool = true} on:mouseout={() => {transformedcardbool = false}}>
             Content
         </div>
@@ -62,8 +68,10 @@
         transition: 0.5s;
         grid-area: center;
         height: 40vh;
+        margin-left: 12vh;
         transform: skewX(var(--skew1));
         background-size: cover;
+        scale: 1.1;
     }
 
     .card::after {
@@ -80,18 +88,6 @@
         transform: scale(1.05);
         opacity: 0.8;
         transition: 500ms all ease-in-out 0ms;
-    }
-
-    .card:nth-child(1) {
-        margin-left: 10vh;
-        z-index: 1;
-    }
-
-    .card:nth-child(2) {
-        margin-left: -19vh;
-        scale: 1.05;
-        backdrop-filter: blur(1vh);
-        z-index: 0;
     }
 
     .transformedcard {
