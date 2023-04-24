@@ -14,6 +14,7 @@
             <a href="/eportfolio" on:click={() => {menu = false}}>E-Portfolio</a> <br> <br>
             <a href="/creativitymethods" on:click={() => {menu = false}}>Kreativitätsmethoden</a> <br> <br>
             <a href="/iperka" on:click={() => {menu = false}}>IPERKA</a> <br> <br>
+            <a href="/presentation" on:click={() => {menu = false}}>Präsentationstechniken</a> <br> <br>
         </div>
     </div>
 {:else}
