@@ -90,7 +90,7 @@
         padding-bottom:2px;
         background-image: linear-gradient(#000000, #000000);
         background-position: 0 100%; /*OR bottom left*/
-        background-size: 0% 2px;
+        background-size: 0 2px;
         background-repeat: no-repeat;
         text-decoration: none;
         transition:
