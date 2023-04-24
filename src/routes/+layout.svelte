@@ -13,6 +13,7 @@
             <a href="/" on:click={() => {menu = false}}>Home</a> <br> <br>
             <a href="/eportfolio" on:click={() => {menu = false}}>E-Portfolio</a> <br> <br>
             <a href="/creativitymethods" on:click={() => {menu = false}}>Kreativitätsmethoden</a> <br> <br>
+            <a href="/iperka" on:click={() => {menu = false}}>IPERKA</a> <br> <br>
         </div>
     </div>
 {:else}
