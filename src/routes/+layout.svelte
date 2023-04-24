@@ -44,7 +44,7 @@
             align-items: center;
             text-align: center;
             align-content: center;
-            background: linear-gradient(#e66465, #9198e5) repeat;
+            background: linear-gradient(#e66465, #9198e5) no-repeat;
             user-select: none;
             min-height: 100%;
             height: auto;
@@ -53,16 +53,32 @@
         }
     }
 
-    .body2 {
-        align-items: center;
-        text-align: center;
-        align-content: center;
-        background: linear-gradient(#e66465, #9198e5) no-repeat;
-        user-select: none;
-        min-height: 100%;
-        height: auto;
-        margin: 0;
-        top: 0;
+    @media (max-width: 679px){
+        .body2 {
+            align-items: center;
+            text-align: center;
+            align-content: center;
+            background: linear-gradient(#e66465, #9198e5, #e66465) repeat;
+            user-select: none;
+            min-height: 100%;
+            height: auto;
+            margin: 0;
+            top: 0;
+        }
+    }
+
+    @media (min-width: 680px){
+        .body2 {
+            align-items: center;
+            text-align: center;
+            align-content: center;
+            background: linear-gradient(#e66465, #9198e5) no-repeat;
+            user-select: none;
+            min-height: 100%;
+            height: auto;
+            margin: 0;
+            top: 0;
+        }
     }
 
     a {

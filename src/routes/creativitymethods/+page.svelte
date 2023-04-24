@@ -140,12 +140,6 @@
         grid-area: center;
         aspect-ratio: 5 / 7;
     }
-
-    .card:hover {
-        width: 24vh;
-        rotate: 5deg;
-
-    }
     @media (min-width: 680px){
 
         .card-group{
@@ -176,6 +170,14 @@
             z-index: var(--index4);
             margin-left: -2vh;
             margin-right: 0;
+        }
+
+        
+
+        .card:hover {
+            width: 24vh;
+            rotate: 5deg;
+
         }
     }
     @media (max-width: 679px){
