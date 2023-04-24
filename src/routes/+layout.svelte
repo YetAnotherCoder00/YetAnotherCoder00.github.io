@@ -15,6 +15,8 @@
             <a href="/creativitymethods" on:click={() => {menu = false}}>Kreativitätsmethoden</a> <br> <br>
             <a href="/iperka" on:click={() => {menu = false}}>IPERKA</a> <br> <br>
             <a href="/presentation" on:click={() => {menu = false}}>Präsentationstechniken</a> <br> <br>
+            <a href="/projectmanagement" on:click={() => {menu = false}}>Projekt Management</a> <br> <br>
+            <a href="/gesamtreflexion" on:click={() => {menu = false}}>Gesamtreflexion</a>
         </div>
     </div>
 {:else}

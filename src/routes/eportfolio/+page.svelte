@@ -103,7 +103,7 @@
 
     i {
         align-self: center;
-        margin: 10vh;
+        margin: 7vh;
     }
 
     p {
@@ -130,6 +130,7 @@
     .card {
         padding: 2vh;
         width: 24vh;
+        min-width: 24vh;
         margin: 5vh 5vh 5vh 0;
         color: white;
         border-radius: 5%;

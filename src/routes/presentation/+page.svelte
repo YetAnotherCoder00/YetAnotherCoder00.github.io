@@ -15,7 +15,7 @@
         command = (mouse.x / 10).toString() + "deg " + (mouse.y / 10).toString() + "deg";
         console.log(command);
 
-        inner.style.transform = "rotateY(" + (-mouse.x / 100 + window.innerWidth / 205).toString() + "deg) rotateX(" + (-mouse.y / 100 + window.innerHeight / 215).toString() + "deg)";
+        inner.style.transform = "rotateY(" + (mouse.x / 100 - window.innerWidth / 205).toString() + "deg) rotateX(" + (-mouse.y / 100 + window.innerHeight / 215).toString() + "deg)";
     }
 
 </script>
