@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { update_await_block_branch } from "svelte/internal";
 
 
     let container: HTMLDivElement;

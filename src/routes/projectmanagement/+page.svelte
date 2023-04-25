@@ -1,24 +1,29 @@
 <script lang="ts">
 
-    let transformedcardbool: boolean = false;
+    let card1transformed: boolean = false;
+    let card2transformed: boolean = false;
 
 </script>
 
 <div>
     <h2>Gehen Sie mit Ihrem Mouse Cursor auf die Karte</h2>
     <div class="body">
-        <div class="card" class:transformedcard={transformedcardbool}>
+        <div class="card" class:transformedcard={card1transformed}>
 
         </div>
-        <div class="blurred" class:transformedcard={transformedcardbool} on:mouseenter={() => transformedcardbool = true} on:mouseout={() => {transformedcardbool = false}}>
-            Content
+        <div class="blurred" class:transformedcard={card1transformed} on:mouseenter={() => card1transformed = true} on:mouseout={() => {card1transformed = false}}>
+            <p>
+                Beschreibung
+            </p>
         </div>
 
-        <div class="card" class:transformedcard={transformedcardbool}>
+        <div class="card" class:transformedcard={card2transformed}>
 
         </div>
-        <div class="blurred" class:transformedcard={transformedcardbool} on:mouseenter={() => transformedcardbool = true} on:mouseout={() => {transformedcardbool = false}}>
-            Content
+        <div class="blurred" class:transformedcard={card2transformed} on:mouseenter={() => card2transformed = true} on:mouseout={() => {card2transformed = false}}>
+            <p>
+                Content
+            </p>
         </div>
     </div>
 </div>
@@ -28,7 +33,10 @@
 <style>
     :root {
         --skew1: 20deg;
-        --skew2: 0deg;
+    }
+
+    p {
+        font-size: 3vh;
     }
 
     .blurred {
@@ -40,7 +48,6 @@
         margin-left: -29vh;
         padding: 2vh;
         width: 30vh;
-        transform: skewY(var(--skew2));
         z-index: 2;
     }
 
@@ -96,7 +103,6 @@
 
     .blurred:hover {
         --skew1: 0deg;
-        --skew2: 0deg;
     }
 
 </style>
