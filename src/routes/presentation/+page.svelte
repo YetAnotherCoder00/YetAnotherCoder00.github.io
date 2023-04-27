@@ -4,19 +4,24 @@
     let container: HTMLDivElement;
     let inner: HTMLDivElement;
 
-    let command: string;
+    let container2: HTMLDivElement;
+    let inner2: HTMLDivElement;
+
     let mouse = { x: 0, y: 0 };
 
     function handleMousemove(event: MouseEvent) {
         mouse.x = event.clientX;
         mouse.y = event.clientY;
 
-        command = (mouse.x / 10).toString() + "deg " + (mouse.y / 10).toString() + "deg";
-        console.log(command);
-
-        inner.style.transform = "rotateY(" + (mouse.x / 100 - window.innerWidth / 205).toString() + "deg) rotateX(" + (-mouse.y / 100 + window.innerHeight / 215).toString() + "deg)";
+        inner.style.transform = "rotateY(" + (mouse.x / 100 - window.innerWidth / 250).toString() + "deg) rotateX(" + (-mouse.y / 100 + window.innerHeight / 215).toString() + "deg)";
     }
 
+    function handleMousemove2(event: MouseEvent) {
+        mouse.x = event.clientX;
+        mouse.y = event.clientY;
+
+        inner2.style.transform = "rotateY(" + (mouse.x / 100 - window.innerWidth / 175).toString() + "deg) rotateX(" + (-mouse.y / 100 + window.innerHeight / 215).toString() + "deg)";
+    }
 </script>
 
 <div>
@@ -24,7 +29,16 @@
     <div class="body">
         <div id="container" bind:this={container}>
             <div id="inner" bind:this={inner} on:mousemove={handleMousemove}>
-                Content
+                Mithilfe von Präsentationstechniken kann man bessere Präsentationen halten,
+                damit man seine Idee besser verkaufen oder besser erklären kann. Dies kann
+                man mithilfe einer sicheren Körperhaltung und ohne Füllwörter zu benutzen erreichen.
+            </div>
+        </div>
+        <div id="container2" bind:this={container2}>
+            <div id="inner2" bind:this={inner2} on:mousemove={handleMousemove2}>
+                Mithilfe von Präsentationstechniken kann man bessere Präsentationen halten,
+                damit man seine Idee besser verkaufen oder besser erklären kann. Dies kann
+                man mithilfe einer sicheren Körperhaltung und ohne Füllwörter zu benutzen erreichen.
             </div>
         </div>
     </div>
@@ -58,6 +72,22 @@
         color: white;
         border-radius: 5%;
         background: linear-gradient(to right, rgb(78, 78, 78), black);
+        font-size: 1.75vh;
+    }
+
+    #container2 {
+        perspective: 100px;
+    }
+
+    #inner2 {
+        aspect-ratio: 5 / 7;
+        width: 24vh;
+        padding: 5vh;
+        margin: 5vh 5vh 5vh 0;
+        color: white;
+        border-radius: 5%;
+        background: linear-gradient(to right, rgb(78, 78, 78), black);
+        font-size: 1.75vh;
     }
 
 </style>

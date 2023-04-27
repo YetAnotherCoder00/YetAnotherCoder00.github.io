@@ -12,18 +12,14 @@
 
         </div>
         <div class="blurred" class:transformedcard={card1transformed} on:mouseenter={() => card1transformed = true} on:mouseout={() => {card1transformed = false}}>
-            <p>
-                Beschreibung
-            </p>
+            Beschreibung
         </div>
 
         <div class="card" class:transformedcard={card2transformed}>
 
         </div>
         <div class="blurred" class:transformedcard={card2transformed} on:mouseenter={() => card2transformed = true} on:mouseout={() => {card2transformed = false}}>
-            <p>
-                Content
-            </p>
+            Content
         </div>
     </div>
 </div>
@@ -31,13 +27,6 @@
 
 
 <style>
-    :root {
-        --skew1: 20deg;
-    }
-
-    p {
-        font-size: 3vh;
-    }
 
     .blurred {
         background: rgba(255, 255, 255, 0.1);
@@ -47,6 +36,7 @@
         margin-top: 0;
         margin-left: -29vh;
         padding: 2vh;
+        font-size: 2.5vh;
         width: 30vh;
         z-index: 2;
     }
@@ -76,7 +66,7 @@
         grid-area: center;
         height: 40vh;
         margin-left: 12vh;
-        transform: skewX(var(--skew1));
+        transform: skewX(20deg);
         background-size: cover;
         scale: 1.1;
     }
@@ -99,10 +89,6 @@
 
     .transformedcard {
         transform: skewY(0deg);
-    }
-
-    .blurred:hover {
-        --skew1: 0deg;
     }
 
 </style>

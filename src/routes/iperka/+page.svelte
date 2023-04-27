@@ -29,10 +29,19 @@
 <div class="card-group" id="cardgroup" bind:this={cardgroup}>
 
     <div class="card" on:click={cardanimation} bind:this={one}>
-        test1
+        IPERKA Erklärt <br> <br>
+        Iperka steht für Informieren, Planen, Entscheiden, Realisieren,
+        Kontrollieren und Auswerten. Zuerst informiert man sich über den
+        Auftrag, dann schaut man die konkreten Möglichkeiten an,
+        danach entscheidet man sich für einen Weg. Im 4. Schritt wird konkret
+        geschaut, wie man das Projekt realisiert. Der 5. Schritt besagt, dass
+        man das Projekt im Auge behält. Anschliessend wird alles ausgewertet,
+        für das nächste Projekt.
     </div>
     <div class="card" on:click={cardanimation} bind:this={two}>
-        test2
+        Meine Meinung <br> <br>
+        Man kann mithilfe des IPERKA Modells Projekte besser managen und auch
+        daraus lernen für zukünftige Projekte.
     </div>
 
 </div>
@@ -42,7 +51,7 @@
 
     .card {
         padding: 2vh;
-        width: 24vh;
+        width: 30vh;
         margin: 25vh 5vh 5vh 0;
         color: white;
         border-radius: 5%;
@@ -50,6 +59,7 @@
         transition: cubic-bezier(.17,.67,.66,.91) 0.15s;
         grid-area: center;
         aspect-ratio: 5 / 7;
+        font-size: 1.75vh;
     }
 
     .card-group {
@@ -66,7 +76,7 @@
 
     .card:nth-child(2) {
         z-index: 1;
-        margin-left: -33vh;
+        margin-left: -39vh;
         rotate: -4deg;
     }
 

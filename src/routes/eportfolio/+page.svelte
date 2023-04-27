@@ -63,15 +63,13 @@
         <div class="card" id="one" class:bigCard1={enlarged1} bind:this={one} on:click={() => {enlarged1toggle()}} on:mouseout={() => enlarged1 = false}> <!-- this comes first -->
             {#if !enlarged1}
                 <p id="title1" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
-                    Die Walt Disney Methode
+                    Beschreibung
                 </p>
             {:else}
-                <p id="text1" style="font-size: 1.25vh; user-select: none;" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
-                    Ein E-Portfolio ist eine digitale Sammlung von Dingen, die du gemacht hast. <br> <br>
-                    Das können zum Beispiel Texte, Bilder, Videos oder Tonaufnahmen sein. <br> <br>
-                    Man benutzt es, um seine Leistungen in Schule oder Beruf zu zeigen. <br> <br>
-                    Mit einem E-Portfolio kann man auch sehen, wie man sich weiterentwickelt hat und sich selbst besser einschätzen. <br> <br>
-                    Arbeitgeber nutzen E-Portfolios manchmal, um Bewerber zu bewerten oder Mitarbeiter zu unterstützen.
+                <p id="text1" style="font-size: 1.5vh; user-select: none;" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
+                        Ein ePortfolio (elektronisches Portfolio) ist eine digitale Sammlung von Dokumenten, die von einer Person erstellt und gespeichert werden, 
+                        um ihre Leistungen, Fähigkeiten, Erfahrungen, Ziele und Fortschritte im Laufe der Zeit zu dokumentieren und zu reflektieren. 
+                        Es kann als persönliches Archiv oder als Mittel zur Demonstration von Kompetenzen und Erfahrungen verwendet werden.
                 </p>
             {/if}
             
@@ -81,7 +79,16 @@
         </div>
         
         <div class="card" class:bigCard1={enlarged2} id="two" bind:this={two} on:click={() => {enlarged2toggle()}} on:mouseout={() => enlarged2 = false}>
-            My own experiences with it
+            {#if !enlarged2}
+                <p id="title1" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
+                    Die Walt Disney Methode
+                </p>
+            {:else}
+                <p id="text1" style="font-size: 1.5vh; user-select: none;" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
+                    Ich finde es grundsätzlich eine gute Idee, da man damit all seine Fähigkeiten und Projekte zusammen zu fassen. Es macht auch das Leben der Arbeitsgeber einfacher und
+                    man kann somit schnell nachschauen, ob jemand für den Job geeignet ist.
+                </p>
+            {/if}
         </div>
         <i class="fa-solid fa-circle-arrow-right fa-2xl" on:click={circleRight}></i>
     </div>
