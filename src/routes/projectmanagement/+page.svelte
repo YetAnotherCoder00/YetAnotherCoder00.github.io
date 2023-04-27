@@ -48,6 +48,12 @@
         padding-bottom: 5vh;
     }
 
+    @media (max-width: 689px) {
+        /* 
+        Todo: Insert the body with display flex here and make it change based on the device width
+        */
+    }
+
     .body {
         display: flex;
         justify-content: center;
