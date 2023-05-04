@@ -11,15 +11,23 @@
         <div class="card" class:transformedcard={card1transformed}>
 
         </div>
+        <!-- svelte-ignore a11y-mouse-events-have-key-events -->
         <div class="blurred" class:transformedcard={card1transformed} on:mouseenter={() => card1transformed = true} on:mouseout={() => {card1transformed = false}}>
-            Beschreibung
+            Beschreibung <br>
+            Hier geht es darum, wie man mit einem Projekt umgeht und welche Methoden es dafür gibt.
+            Es gibt zum Beispiel das Wasserfallmodell, in welchem die oberen / vorherigen Phasen für die
+            nächste vorgegeben sein müssen, SCRUM, in welchem Sprints zentral sind und viele weitere.
         </div>
 
         <div class="card" class:transformedcard={card2transformed}>
 
         </div>
+        <!-- svelte-ignore a11y-mouse-events-have-key-events -->
         <div class="blurred" class:transformedcard={card2transformed} on:mouseenter={() => card2transformed = true} on:mouseout={() => {card2transformed = false}}>
-            Content
+            Meine Meinung <br>
+            Meiner Meinung nach ist es wichtig zu wisesen, was für Projektmanagement- methoden existieren.
+            Es ist aber vor allem wichtig für den Projektleiter, damit er weiss, wie man mit einem Team 
+            arbeiten sollte.
         </div>
     </div>
 </div>

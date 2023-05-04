@@ -59,6 +59,8 @@
 <div class="body">
     <h2>E-Portfolio</h2>
     <div class="card-group">
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <!-- svelte-ignore a11y-mouse-events-have-key-events -->
         <div class="card" id="one" class:bigCard1={enlarged1} bind:this={one} on:click={() => {enlarged1toggle()}} on:mouseout={() => enlarged1 = false}> <!-- this comes first -->
             {#if !enlarged1}
                 <p id="title1" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
@@ -77,6 +79,8 @@
             </p>
         </div>
         
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <!-- svelte-ignore a11y-mouse-events-have-key-events -->
         <div class="card" class:bigCard1={enlarged2} id="two" bind:this={two} on:click={() => {enlarged2toggle()}} on:mouseout={() => enlarged2 = false}>
             {#if !enlarged2}
                 <p id="title1" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
@@ -90,7 +94,9 @@
             {/if}
         </div>
     </div>
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
     <i class="fa-solid fa-circle-arrow-left fa-2xl" on:click={circleLeft}></i>
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
     <i class="fa-solid fa-circle-arrow-right fa-2xl" on:click={circleRight}></i>
 </div>
 

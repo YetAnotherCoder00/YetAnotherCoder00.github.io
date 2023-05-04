@@ -28,6 +28,7 @@
 
 <div class="card-group" id="cardgroup" bind:this={cardgroup}>
 
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
     <div class="card" on:click={cardanimation} bind:this={one}>
         IPERKA Erklärt <br> <br>
         Iperka steht für Informieren, Planen, Entscheiden, Realisieren,
@@ -38,6 +39,7 @@
         man das Projekt im Auge behält. Anschliessend wird alles ausgewertet,
         für das nächste Projekt.
     </div>
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
     <div class="card" on:click={cardanimation} bind:this={two}>
         Meine Meinung <br> <br>
         Man kann mithilfe des IPERKA Modells Projekte besser managen und auch

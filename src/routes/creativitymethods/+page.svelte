@@ -38,8 +38,10 @@
 
     <h2>Kreativitätsmethoden</h2>
 
+    <!-- svelte-ignore a11y-mouse-events-have-key-events -->
     <div class="card-group">
 
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div class="card" id="card1" class:bigCard1="{enlarged1 === true}" on:click={enlarged1toggle} on:mouseout={() => enlarged1 = false}>
             {#if !enlarged1}
                 <p id="title1" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
@@ -53,6 +55,7 @@
                 </p>
             {/if}
         </div>
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div class="card" id="card2" class:bigCard2="{enlarged2 === true}" on:click={enlarged2toggle} on:mouseout={() => enlarged2 = false}>
             {#if !enlarged2}
                 <p id="title2" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
@@ -65,6 +68,7 @@
                 </p>
             {/if}
         </div>
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div class="card" id="card3" class:bigCard3="{enlarged3 === true}" on:click={enlarged3toggle} on:mouseout={() => enlarged3 = false}>
             {#if !enlarged3}
                 <p id="title3" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
@@ -78,6 +82,7 @@
                 </p>
             {/if}
         </div>
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div class="card" id="card4" class:bigCard4="{enlarged4 === true}" on:click={enlarged4toggle} on:mouseout={() => enlarged4 = false}>
             {#if !enlarged4}
                 <p id="title4" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">

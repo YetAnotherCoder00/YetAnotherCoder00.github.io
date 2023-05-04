@@ -8,6 +8,7 @@
 
 {#if menu}
     <div class="body2" in:fade={{duration: 300, delay: 300}} out:fade={{duration: 300, delay: 0}}>
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
         <i class="fa-solid fa-x fa-2xl" style="top: 20px; right: 10px; position: absolute; z-index: 12;" on:click={() => {menu = false}} transition:fade></i>
         <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; line-height: 1.6 ">
             <a href="/" on:click={() => {menu = false}}>Home</a> <br> <br>
@@ -20,6 +21,7 @@
         </div>
     </div>
 {:else}
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
     <div class="body" in:fade={{duration: 300, delay: 300}} out:fade={{duration: 300, delay: 0}}>
         <i class="fa-solid fa-bars fa-2xl" style="top: 20px; right: 10px; position: absolute; z-index: 12;" on:click={() => {menu = true}} transition:fade></i>
         <slot />
@@ -31,6 +33,17 @@
 
     @media (max-width: 679px) {
         .body {
+            align-items: center;
+            text-align: center;
+            align-content: center;
+            background: linear-gradient(#e66465, #9198e5, #e66465) repeat;
+            user-select: none;
+            min-height: 100%;
+            height: auto;
+            margin: 0;
+            top: 0;
+        }
+        .body2 {
             align-items: center;
             text-align: center;
             align-content: center;
@@ -55,23 +68,6 @@
             margin: 0;
             top: 0;
         }
-    }
-
-    @media (max-width: 679px){
-        .body2 {
-            align-items: center;
-            text-align: center;
-            align-content: center;
-            background: linear-gradient(#e66465, #9198e5, #e66465) repeat;
-            user-select: none;
-            min-height: 100%;
-            height: auto;
-            margin: 0;
-            top: 0;
-        }
-    }
-
-    @media (min-width: 680px){
         .body2 {
             align-items: center;
             text-align: center;
