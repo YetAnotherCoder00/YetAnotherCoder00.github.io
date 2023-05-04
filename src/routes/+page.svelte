@@ -20,10 +20,6 @@
         padding: 10vh 0 0 0;
     }
 
-    h2 {
-        font-size: 4vh;
-    }
-
     p {
         font-size: 3vh;
         transition: cubic-bezier(.17, .67, .66, .91) 0.15s;

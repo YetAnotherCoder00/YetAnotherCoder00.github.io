@@ -1,7 +1,7 @@
 
 
 <script lang="ts">
-    import { scale, fade, slide } from 'svelte/transition';
+    import { scale } from 'svelte/transition';
 
     let enlarged1: boolean = false;
     let enlarged2: boolean = false;
@@ -102,6 +102,17 @@
             {/if}
         </div>
 
+    </div>
+
+    <h2>
+        Meine Meinung
+    </h2>
+
+    <div>
+        <p>
+            Meiner Meinung nach sind diese Methoden noch nützlich, sogar um Progleme zu lösen. Man kann damit allgemein Ideen finden, egal für was und dadurch eignen sich diese Methoden auch für andere
+            Dinge.
+        </p>    
     </div>
 </div>
 

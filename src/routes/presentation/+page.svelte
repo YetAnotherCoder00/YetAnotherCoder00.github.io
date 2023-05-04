@@ -31,14 +31,13 @@
             <div id="inner" bind:this={inner} on:mousemove={handleMousemove}>
                 Mithilfe von Präsentationstechniken kann man bessere Präsentationen halten,
                 damit man seine Idee besser verkaufen oder besser erklären kann. Dies kann
-                man mithilfe einer sicheren Körperhaltung und ohne Füllwörter zu benutzen erreichen.
+                man mithilfe einer sicheren Körperhaltung und ohne Füllwörter zu benutzen, erreichen.
             </div>
         </div>
         <div id="container2" bind:this={container2}>
             <div id="inner2" bind:this={inner2} on:mousemove={handleMousemove2}>
-                Mithilfe von Präsentationstechniken kann man bessere Präsentationen halten,
-                damit man seine Idee besser verkaufen oder besser erklären kann. Dies kann
-                man mithilfe einer sicheren Körperhaltung und ohne Füllwörter zu benutzen erreichen.
+                Präsentationstechniken sind für mich sehr wichtig, weil man sehr vieles präsentieren muss. Sie sind für mich auch wichtig, da man mir schon früh gelehrt hatte, wie wichtig eine
+                gute Präsentation ist. Für mich bedeutet dies auch zum Beispiel grundsätzlich kein Text oder sehr wenig Text auf den Folien zu haben.
             </div>
         </div>
     </div>

@@ -59,7 +59,6 @@
 <div class="body">
     <h2>E-Portfolio</h2>
     <div class="card-group">
-        <i class="fa-solid fa-circle-arrow-left fa-2xl" on:click={circleLeft}></i>
         <div class="card" id="one" class:bigCard1={enlarged1} bind:this={one} on:click={() => {enlarged1toggle()}} on:mouseout={() => enlarged1 = false}> <!-- this comes first -->
             {#if !enlarged1}
                 <p id="title1" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
@@ -81,7 +80,7 @@
         <div class="card" class:bigCard1={enlarged2} id="two" bind:this={two} on:click={() => {enlarged2toggle()}} on:mouseout={() => enlarged2 = false}>
             {#if !enlarged2}
                 <p id="title1" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
-                    Die Walt Disney Methode
+                    Meine Meinung
                 </p>
             {:else}
                 <p id="text1" style="font-size: 1.5vh; user-select: none;" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
@@ -90,8 +89,9 @@
                 </p>
             {/if}
         </div>
-        <i class="fa-solid fa-circle-arrow-right fa-2xl" on:click={circleRight}></i>
     </div>
+    <i class="fa-solid fa-circle-arrow-left fa-2xl" on:click={circleLeft}></i>
+    <i class="fa-solid fa-circle-arrow-right fa-2xl" on:click={circleRight}></i>
 </div>
 
 
@@ -108,10 +108,11 @@
         padding-top: 10vh;
     }
 
+    
     i {
-        align-self: center;
-        margin: 7vh;
-    }
+            align-self: center;
+            margin: 7vh;
+        }
 
     p {
         font-size: 2vh;
@@ -152,7 +153,7 @@
         display: flex;
     }
 
-    .card:nth-child(2) {
+    .card:nth-child(1) {
         margin-left: 0;
         margin-right: 0;
         background: linear-gradient(to right, rgb(78, 78, 78), black);
@@ -162,7 +163,7 @@
 
     }
 
-    .card:nth-child(3) {
+    .card:nth-child(2) {
         color: black;
         margin-left: -20vh;
         background: linear-gradient(to right, rgb(255, 255, 255), rgb(126, 126, 126));
