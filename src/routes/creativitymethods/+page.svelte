@@ -109,11 +109,13 @@
 
     </div>
 
+    
+
     <h2>
         Meine Meinung
     </h2>
 
-    <div>
+    <div class="meinung">
         <p>
             Meiner Meinung nach sind diese Methoden noch nützlich, sogar um Progleme zu lösen. Man kann damit allgemein Ideen finden, egal für was und dadurch eignen sich diese Methoden auch für andere
             Dinge.
@@ -127,6 +129,10 @@
         --index2: 2;
         --index3: 3;
         --index4: 4;
+    }
+
+    .meinung {
+        padding-bottom: 1vh;
     }
 
     h1 {
