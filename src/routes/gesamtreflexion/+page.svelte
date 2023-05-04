@@ -1,3 +1,8 @@
+
+<svelte:head>
+    <title>Gesamtreflexion</title>
+</svelte:head>
+
 <div class="body">
     <h2>Gesamtreflexion</h2>
 

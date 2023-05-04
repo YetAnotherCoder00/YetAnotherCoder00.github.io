@@ -5,6 +5,10 @@
 
 </script>
 
+<svelte:head>
+    <title>Projektmanagement</title>
+</svelte:head>
+
 <div>
     <h2>Gehen Sie mit Ihrem Mouse Cursor auf die Karte</h2>
     <div class="body">

@@ -31,10 +31,12 @@
 
 </script>
 
+
+<svelte:head>
+    <title>Kreativitätsmethode</title>
+</svelte:head>
+
 <div class="body">
-    <h1>
-        E-Portfolio
-    </h1>
 
     <h2>Kreativitätsmethoden</h2>
 
@@ -135,12 +137,6 @@
         padding-bottom: 1vh;
     }
 
-    h1 {
-        font-size: 8vh;
-        margin: 0;
-        padding: 10vh 0 0 0;
-    }
-
     h2 {
         font-size: 4vh;
     }
@@ -149,6 +145,7 @@
         font-size: 2vh;
         transition: cubic-bezier(.17, .67, .66, .91) 0.15s;
         pointer-events: none;
+        padding: 5vh;
     }
 
     .card {

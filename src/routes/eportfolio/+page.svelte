@@ -56,6 +56,11 @@
 
 </script>
 
+
+<svelte:head>
+    <title>E-Portfolio</title>
+</svelte:head>
+
 <div class="body">
     <h2>E-Portfolio</h2>
     <div class="card-group">

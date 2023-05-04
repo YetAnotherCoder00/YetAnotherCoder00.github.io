@@ -4,6 +4,10 @@
 
 </script>
 
+<svelte:head>
+    <title>Home</title>
+</svelte:head>
+
 <div class="body">
     <h1>
         Modul 431

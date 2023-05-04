@@ -26,6 +26,11 @@
 </script>
 
 
+<svelte:head>
+    <title>IPERKA</title>
+</svelte:head>
+
+
 <div class="card-group" id="cardgroup" bind:this={cardgroup}>
 
     <!-- svelte-ignore a11y-click-events-have-key-events -->
