@@ -49,7 +49,7 @@
         </div>
         <!-- svelte-ignore a11y-mouse-events-have-key-events -->
         <div class="blurred" class:transformedcard={card4transformed} on:mouseenter={() => card4transformed = true} on:mouseout={() => {card4transformed = false}}>
-            Meine Meinung <br>
+            Reflexion <br>
             Meiner Meinung nach ist es wichtig zu wisesen, was für Projektmanagement- methoden existieren.
             Es ist aber vor allem wichtig für den Projektleiter, damit er weiss, wie man mit einem Team 
             arbeiten sollte.

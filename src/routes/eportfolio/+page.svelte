@@ -89,7 +89,7 @@
         <div class="card" class:bigCard1={enlarged2} id="two" bind:this={two} on:click={() => {enlarged2toggle()}} on:mouseout={() => enlarged2 = false}>
             {#if !enlarged2}
                 <p id="title1" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
-                    Meine Meinung
+                    Reflexion
                 </p>
             {:else}
                 <p id="text1" style="font-size: 1.5vh; user-select: none;" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">

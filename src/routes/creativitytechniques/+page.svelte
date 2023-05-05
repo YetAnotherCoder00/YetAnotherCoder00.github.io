@@ -118,7 +118,7 @@
         <div class="card" id="card5" class:bigCard5="{enlarged5 === true}" on:click={enlarged5toggle} on:mouseout={() => enlarged5 = false}>
             {#if !enlarged5}
                 <p id="title5" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
-                    Meine Meinung
+                    Reflexion
                 </p>
             {:else}
                 <p id="text5" style="font-size: 1.25vh; user-select: none; line-height: 1.25vh;" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
