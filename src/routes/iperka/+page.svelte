@@ -19,7 +19,7 @@
         }
         else {
             one.style.marginLeft = "0vh";
-            two.style.marginLeft = "-33vh";
+            two.style.marginLeft = "-39vh";
             three.style.marginLeft = "-40vh";
             one.style.rotate = "4deg";
             two.style.rotate = "-4deg";
@@ -57,8 +57,8 @@
     </div>
 
     <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <div class="card" on:click={cardanimation} bind:this={three}>
-        <img src="lightbulb.jpeg" alt="Licht" style="width: 50%">
+    <div class="card" on:click={cardanimation} bind:this={three} style="display: flex;">
+        <img src="iperka.jpeg" alt="Licht" style="width: 100%;">
     </div>
 
 </div>

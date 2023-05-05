@@ -10,13 +10,15 @@
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <i class="fa-solid fa-x fa-2xl" style="top: 20px; right: 10px; position: absolute; z-index: 12;" on:click={() => {menu = false}} transition:fade></i>
         <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; line-height: 1.6 ">
-            <a href="/" on:click={() => {menu = false}} data-sveltekit-preload-code="eager">Home</a> <br> <br>
-            <a href="/eportfolio" on:click={() => {menu = false}} data-sveltekit-preload-code="eager">E-Portfolio</a> <br> <br>
-            <a href="/creativitymethods" on:click={() => {menu = false}} data-sveltekit-preload-code="eager">Kreativitätsmethoden</a> <br> <br>
-            <a href="/iperka" on:click={() => {menu = false}} data-sveltekit-preload-code="eager">IPERKA</a> <br> <br>
-            <a href="/presentation" on:click={() => {menu = false}} data-sveltekit-preload-code="eager">Präsentationstechniken</a> <br> <br>
-            <a href="/projectmanagement" on:click={() => {menu = false}} data-sveltekit-preload-code="eager">Projekt Management</a> <br> <br>
-            <a href="/gesamtreflexion" on:click={() => {menu = false}} data-sveltekit-preload-code="eager">Gesamtreflexion</a>
+            <a href="/" on:click={() => {menu = false}} data-sveltekit-preload-code="eager" data-sveltekit-preload-data="hover">Home</a> <br> <br>
+            <a href="/kompetenzen" on:click={() => {menu = false}} data-sveltekit-preload-code="eager" data-sveltekit-preload-data="hover">Kompetenzen</a> <br> <br>
+            <a href="/qualifikationen" on:click={() => {menu = false}} data-sveltekit-preload-code="eager" data-sveltekit-preload-data="hover">Qualifikationen</a> <br> <br>
+            <a href="/eportfolio" on:click={() => {menu = false}} data-sveltekit-preload-code="eager" data-sveltekit-preload-data="hover">E-Portfolio</a> <br> <br>
+            <a href="/creativitytechniques" on:click={() => {menu = false}} data-sveltekit-preload-code="eager" data-sveltekit-preload-data="hover">Kreativitätstechniken</a> <br> <br>
+            <a href="/iperka" on:click={() => {menu = false}} data-sveltekit-preload-code="eager" data-sveltekit-preload-data="hover">Vollständige Handlung mit IPERKA</a> <br> <br>
+            <a href="/presentation" on:click={() => {menu = false}} data-sveltekit-preload-code="eager" data-sveltekit-preload-data="hover">Präsentationstechniken</a> <br> <br>
+            <a href="/projectmanagement" on:click={() => {menu = false}} data-sveltekit-preload-code="eager" data-sveltekit-preload-data="hover">Projektmanagement</a> <br> <br>
+            <a href="/gesamtreflexion" on:click={() => {menu = false}} data-sveltekit-preload-code="eager" data-sveltekit-preload-data="hover">Gesamtreflexion</a>
         </div>
     </div>
 {:else}

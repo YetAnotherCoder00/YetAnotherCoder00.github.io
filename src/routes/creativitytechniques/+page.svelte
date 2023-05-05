@@ -243,7 +243,8 @@
         .card-group{
             justify-content: center;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
         .card:nth-child(1) {
             z-index: var(--index1);
