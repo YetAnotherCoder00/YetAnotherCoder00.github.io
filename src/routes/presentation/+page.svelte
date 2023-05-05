@@ -17,14 +17,14 @@
         mouse.x = event.clientX;
         mouse.y = event.clientY;
 
-        inner.style.transform = "rotateY(" + (mouse.x / 100 - window.innerWidth / 300).toString() + "deg) rotateX(" + (-mouse.y / 100 + window.innerHeight / 150).toString() + "deg)";
+        inner.style.transform = "rotateY(" + (mouse.x / 100 - window.innerWidth / 250).toString() + "deg) rotateX(" + (-mouse.y / 100 + window.innerHeight / 150).toString() + "deg)";
     }
 
     function handleMousemove2(event: MouseEvent) {
         mouse.x = event.clientX;
         mouse.y = event.clientY;
 
-        inner2.style.transform = "rotateY(" + (mouse.x / 100 - window.innerWidth / 150).toString() + "deg) rotateX(" + (-mouse.y / 100 + window.innerHeight / 150).toString() + "deg)";
+        inner2.style.transform = "rotateY(" + (mouse.x / 100 - window.innerWidth / 175).toString() + "deg) rotateX(" + (-mouse.y / 100 + window.innerHeight / 150).toString() + "deg)";
     }
 </script>
 
@@ -47,6 +47,7 @@
 
         <div id="container2" bind:this={container2}>
             <div id="inner2" bind:this={inner2} on:mousemove={handleMousemove2}>
+                Reflexion: <br>
                 Präsentationstechniken sind für mich sehr wichtig, weil man sehr vieles präsentieren muss. Sie sind für mich auch wichtig, da man mir schon früh gelehrt hatte, wie wichtig eine
                 gute Präsentation ist. Für mich bedeutet dies auch zum Beispiel grundsätzlich kein Text oder sehr wenig Text auf den Folien zu haben.
             </div>

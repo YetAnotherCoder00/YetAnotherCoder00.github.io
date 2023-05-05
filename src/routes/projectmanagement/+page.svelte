@@ -19,7 +19,7 @@
         </div>
         <!-- svelte-ignore a11y-mouse-events-have-key-events -->
         <div class="blurred" class:transformedcard={card1transformed} on:mouseenter={() => card1transformed = true} on:mouseout={() => {card1transformed = false}}>
-            SCRUM <br>
+            Scrum <br>
             ist ein Teil der agilen Softwareentwicklung. Man arbeitet mit Sprints, welche einige Wochen dauern, wodurch ein Teil des Projektes entsteht. Diese Teile werden immer gezeigt und man kann schnell etwas anpassen.
         </div>
 
