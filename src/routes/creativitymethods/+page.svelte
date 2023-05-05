@@ -7,6 +7,7 @@
     let enlarged2: boolean = false;
     let enlarged3: boolean = false;
     let enlarged4: boolean = false;
+    let enlarged5: boolean = false;
 
     function enlarged1toggle(){
         if (enlarged1) enlarged1 = false;
@@ -28,6 +29,10 @@
         else if (!enlarged4) enlarged4 = true;
     }
 
+    function enlarged5toggle(){
+        enlarged5 = !enlarged5
+    }
+
 
 </script>
 
@@ -38,7 +43,7 @@
 
 <div class="body">
 
-    <h2>Kreativitätsmethoden</h2>
+    <h2>Kreativitätsmethoden<br><br></h2>
 
     <!-- svelte-ignore a11y-mouse-events-have-key-events -->
     <div class="card-group">
@@ -51,8 +56,8 @@
                 </p>
             {:else}
                 <p id="text1" style="font-size: 1.25vh; user-select: none;" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
-                    Bei dieser methode hat man vier Stühle. Auf jedem Stuhl sitzt eine Person. Jede Person nimmt eine Rolle ein: Neutral, Kritisch, Realistisch und Träumerisch. <br><br>
-                    Aus der Perspektive der person, auf deren Stuhl man sitzt bringt man dann Ideen und wertet man die Ideen der anderen. Danach wechselt man den stul. <br><br>
+                    Bei dieser methode hat man vier Stühle. Auf jedem Stuhl sitzt eine Person. Jede Person nimmt eine Rolle ein: Neutral, Kritisch, Realistisch und Träumerisch. <br>
+                    Aus der Perspektive der person, auf deren Stuhl man sitzt bringt man dann Ideen und wertet man die Ideen der anderen. Danach wechselt man den stul. <br>
                     Bei der neutralen Person wird dann zusammengefasst. Dann geht es so lange im kreis, bis alle Personen damit einverstanden sind und man ist fertig.
                 </p>
             {/if}
@@ -91,7 +96,7 @@
                     Die Kuchen Methode
                 </p>
             {:else}
-                <p id="text4" style="font-size: 1.25vh; user-select: none; line-height: 1.25vh;" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
+                <p id="text4" style="font-size: 1.15vh; user-select: none; line-height: 1.15vh;" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 160}}">
                     Wenn man die Kuchen Methode anwendet, geht man beim Überlegen so vor, wie beim Kuchen-Backen:
                     <br><br>
                     Die Zutaten sammeln:
@@ -109,19 +114,20 @@
             {/if}
         </div>
 
-    </div>
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <div class="card" id="card5" class:bigCard5="{enlarged5 === true}" on:click={enlarged5toggle} on:mouseout={() => enlarged5 = false}>
+            {#if !enlarged5}
+                <p id="title5" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
+                    Meine Meinung
+                </p>
+            {:else}
+                <p id="text5" style="font-size: 1.25vh; user-select: none; line-height: 1.25vh;" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
+                    Meiner Meinung nach sind diese Methoden noch nützlich, sogar um Progleme zu lösen. Man kann damit allgemein Ideen finden, egal für was und dadurch eignen sich diese Methoden auch für andere
+                    Dinge.
+                </p>
+            {/if}
+        </div>
 
-    
-
-    <h2>
-        Meine Meinung
-    </h2>
-
-    <div class="meinung">
-        <p>
-            Meiner Meinung nach sind diese Methoden noch nützlich, sogar um Progleme zu lösen. Man kann damit allgemein Ideen finden, egal für was und dadurch eignen sich diese Methoden auch für andere
-            Dinge.
-        </p>    
     </div>
 </div>
 
@@ -131,10 +137,7 @@
         --index2: 2;
         --index3: 3;
         --index4: 4;
-    }
-
-    .meinung {
-        padding-bottom: 1vh;
+        --index5: 5;
     }
 
     h2 {
@@ -145,7 +148,7 @@
         font-size: 2vh;
         transition: cubic-bezier(.17, .67, .66, .91) 0.15s;
         pointer-events: none;
-        padding: 5vh;
+        padding: 0vh;
     }
 
     .card {
@@ -192,6 +195,13 @@
         }
 
         
+        .card:nth-child(5) {
+            z-index: var(--index5);
+            margin-left: -2vh;
+            margin-right: 0;
+        }
+
+        
 
         .card:hover {
             width: 24vh;
@@ -216,6 +226,11 @@
 
         .bigCard4 {
             --index4: 10;
+            scale: 1.8;
+        }
+
+        .bigCard5{
+            --index5: 10;
             scale: 1.8;
         }
     }
@@ -248,6 +263,11 @@
             margin: 2vh auto 2vh auto;
         }
 
+        .card:nth-child(5) {
+            z-index: var(--index5);
+            margin: 2vh auto 20vh auto;
+        }
+
         .bigCard1 {
             --index1: 10;
             scale: 1.6;
@@ -266,6 +286,11 @@
         .bigCard4 {
             --index4: 10;
             scale: 1.6;
+        }
+        
+        .bigCard5{
+            --index5: 10;
+            scale: 1.8;
         }
     }
 
