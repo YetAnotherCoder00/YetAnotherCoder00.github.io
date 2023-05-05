@@ -12,6 +12,8 @@
         sondern auch noch andere Dinge, welche ebenso relevant sind. Diese sind noch wichtiger,
         wenn man Projektleiter wird.
     </p>
+
+    <img src="denken.jpeg" style="width: 40%">
 </div>
 
 <style>

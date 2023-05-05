@@ -129,9 +129,13 @@
         </div>
 
     </div>
+
+    <img src="lightbulb.jpeg" alt="Licht" style="width: 25%">
+
 </div>
 
 <style>
+
     :root {
         --index1: 1;
         --index2: 2;
@@ -265,7 +269,7 @@
 
         .card:nth-child(5) {
             z-index: var(--index5);
-            margin: 2vh auto 20vh auto;
+            margin: 2vh auto 10vh auto;
         }
 
         .bigCard1 {

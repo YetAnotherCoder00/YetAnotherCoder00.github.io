@@ -3,6 +3,7 @@
     let cardgroup: HTMLDivElement;
     let one: HTMLDivElement;
     let two: HTMLDivElement;
+    let three: HTMLDivElement;
 
     let showCards: boolean = false;
 
@@ -10,15 +11,19 @@
         if (!showCards) {
             one.style.marginLeft = "0vh";
             two.style.marginLeft = "4vh";
+            three.style.marginLeft = "6vh";
             one.style.rotate = "0deg";
             two.style.rotate = "0deg";
+            three.style.rotate = "0deg";
             showCards = true;
         }
         else {
             one.style.marginLeft = "0vh";
             two.style.marginLeft = "-33vh";
+            three.style.marginLeft = "-40vh";
             one.style.rotate = "4deg";
             two.style.rotate = "-4deg";
+            three.style.rotate = "-8deg";
             showCards = false;
         }
     }
@@ -51,6 +56,11 @@
         daraus lernen für zukünftige Projekte.
     </div>
 
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <div class="card" on:click={cardanimation} bind:this={three}>
+        <img src="lightbulb.jpeg" alt="Licht" style="width: 50%">
+    </div>
+
 </div>
 
 
@@ -76,7 +86,7 @@
     }
 
     .card:nth-child(1) {
-        margin-left: 0;
+        margin-left: 2vh;
         z-index: 2;
         rotate: 4deg
     }
@@ -85,6 +95,12 @@
         z-index: 1;
         margin-left: -39vh;
         rotate: -4deg;
+    }
+
+    .card:nth-child(3) {
+        z-index: 0;
+        margin-left: -40vh;
+        rotate: -8deg;
     }
 
 </style>
