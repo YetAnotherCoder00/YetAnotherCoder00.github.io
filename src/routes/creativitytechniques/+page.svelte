@@ -56,7 +56,7 @@
                 </p>
             {:else}
                 <p id="text1" style="font-size: 1.25vh; user-select: none;" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
-                    Bei dieser methode hat man vier Stühle. Auf jedem Stuhl sitzt eine Person. Jede Person nimmt eine Rolle ein: Neutral, Kritisch, Realistisch und Träumerisch. <br>
+                    Bei dieser Methode hat man vier Stühle. Auf jedem Stuhl sitzt eine Person. Jede Person nimmt eine Rolle ein: Neutral, Kritisch, Realistisch und Träumerisch. <br>
                     Aus der Perspektive der person, auf deren Stuhl man sitzt bringt man dann Ideen und wertet man die Ideen der anderen. Danach wechselt man den Stuhl. <br>
                     Bei der neutralen Person wird dann zusammengefasst. Dann geht es so lange im kreis, bis alle Personen damit einverstanden sind und man ist fertig.
                 </p>
