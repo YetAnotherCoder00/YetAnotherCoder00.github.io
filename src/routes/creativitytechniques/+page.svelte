@@ -57,7 +57,7 @@
             {:else}
                 <p id="text1" style="font-size: 1.25vh; user-select: none;" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
                     Bei dieser methode hat man vier Stühle. Auf jedem Stuhl sitzt eine Person. Jede Person nimmt eine Rolle ein: Neutral, Kritisch, Realistisch und Träumerisch. <br>
-                    Aus der Perspektive der person, auf deren Stuhl man sitzt bringt man dann Ideen und wertet man die Ideen der anderen. Danach wechselt man den stul. <br>
+                    Aus der Perspektive der person, auf deren Stuhl man sitzt bringt man dann Ideen und wertet man die Ideen der anderen. Danach wechselt man den Stuhl. <br>
                     Bei der neutralen Person wird dann zusammengefasst. Dann geht es so lange im kreis, bis alle Personen damit einverstanden sind und man ist fertig.
                 </p>
             {/if}
@@ -71,7 +71,7 @@
             {:else}
                 <p id="text2" style="font-size: 1.25vh; user-select: none;" out:scale="{{duration: 150}}" in:scale="{{duration: 150, delay: 150}}">
                     Beim Brainstorming schreiben alle Teilnehmer Alle ihre Gedanken, die sie zu einem Thema haben auf ein Blatt, Whiteboard, oder ein anderes geeignetes medium. <br> <br>
-                    Das Ziel dabei ist es, schlussendlich so viele Ideen zu einem Thema zu generieren, wie möglich. Mit Braianstorming meint man also das schnelle und ungefilterte Sammeln von Ideen.
+                    Das Ziel dabei ist es, schlussendlich so viele Ideen zu einem Thema zu generieren, wie möglich. Mit Brainstorming meint man also das schnelle und ungefilterte Sammeln von Ideen.
                 </p>
             {/if}
         </div>
