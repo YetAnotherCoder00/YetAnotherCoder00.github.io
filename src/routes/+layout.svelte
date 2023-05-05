@@ -1,7 +1,6 @@
 <script lang="ts">
 
     import { fade } from 'svelte/transition';
-
     let menu: boolean = false;
 
 </script>
@@ -11,13 +10,13 @@
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <i class="fa-solid fa-x fa-2xl" style="top: 20px; right: 10px; position: absolute; z-index: 12;" on:click={() => {menu = false}} transition:fade></i>
         <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; line-height: 1.6 ">
-            <a href="/" on:click={() => {menu = false}}>Home</a> <br> <br>
-            <a href="/eportfolio" on:click={() => {menu = false}}>E-Portfolio</a> <br> <br>
-            <a href="/creativitymethods" on:click={() => {menu = false}}>Kreativitätsmethoden</a> <br> <br>
-            <a href="/iperka" on:click={() => {menu = false}}>IPERKA</a> <br> <br>
-            <a href="/presentation" on:click={() => {menu = false}}>Präsentationstechniken</a> <br> <br>
-            <a href="/projectmanagement" on:click={() => {menu = false}}>Projekt Management</a> <br> <br>
-            <a href="/gesamtreflexion" on:click={() => {menu = false}}>Gesamtreflexion</a>
+            <a href="/" on:click={() => {menu = false}} data-sveltekit-preload-code="eager">Home</a> <br> <br>
+            <a href="/eportfolio" on:click={() => {menu = false}} data-sveltekit-preload-code="eager">E-Portfolio</a> <br> <br>
+            <a href="/creativitymethods" on:click={() => {menu = false}} data-sveltekit-preload-code="eager">Kreativitätsmethoden</a> <br> <br>
+            <a href="/iperka" on:click={() => {menu = false}} data-sveltekit-preload-code="eager">IPERKA</a> <br> <br>
+            <a href="/presentation" on:click={() => {menu = false}} data-sveltekit-preload-code="eager">Präsentationstechniken</a> <br> <br>
+            <a href="/projectmanagement" on:click={() => {menu = false}} data-sveltekit-preload-code="eager">Projekt Management</a> <br> <br>
+            <a href="/gesamtreflexion" on:click={() => {menu = false}} data-sveltekit-preload-code="eager">Gesamtreflexion</a>
         </div>
     </div>
 {:else}

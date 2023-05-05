@@ -15,6 +15,8 @@
 
     <p>Willkommen auf meiner Seite! Hier werde ich erklären, was wir alles im Modul 431 gemacht haben!</p>
     <p>Drücken Sie auf das Menu Icon oben rechts, um zu beginnen.</p>
+
+    <img src="systemtechnik.jpeg" alt="Systemtechnik Bild">
 </div>
 
 <style>
