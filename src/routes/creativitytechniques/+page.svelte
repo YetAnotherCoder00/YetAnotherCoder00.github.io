@@ -130,8 +130,6 @@
 
     </div>
 
-    <img src="lightbulb.jpeg" alt="Licht" style="width: 25%">
-
 </div>
 
 <style>
